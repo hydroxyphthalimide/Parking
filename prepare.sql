@@ -6,7 +6,7 @@ CREATE TABLE parking_session (
   zone_number      varchar(10)
 );
 
-\copy parking_session FROM '~/Projects/Sql/data.csv' HEADER DELIMITER ';' CSV;
+\copy parking_session FROM 'path/to/your/database.csv' HEADER DELIMITER ';' CSV;
 
 ALTER TABLE parking_session
   ADD COLUMN start_time timestamp;
