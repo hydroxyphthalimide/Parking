@@ -4,7 +4,7 @@
 \set min_unique_days 15
 \set selected_date '2021-04-23'
 
-EXPLAIN ANALYSE WITH date_filtered AS (
+WITH date_filtered AS (
   SELECT
     accountid,
     zone_number,
